@@ -14,8 +14,6 @@ public class MyTestCases {
 	String WebsiteURL = "https://automationteststore.com/";
 	String SignUpPage = "https://automationteststore.com/index.php?rt=account/create";
 	
-	
-	
 	@BeforeTest
 	public void mySetup() {
 		
@@ -28,7 +26,7 @@ public class MyTestCases {
 		
 		driver.navigate().to(SignUpPage);
 		WebElement FirstName = driver.findElement(By.xpath("//*[@id=\"AccountFrm_firstname\"]"));
-		
-		FirstName.sendKeys("Manar");	
+		//Actions
+		FirstName.sendKeys("Manar");		
 	}
 }
